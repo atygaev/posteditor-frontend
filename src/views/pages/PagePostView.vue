@@ -1,5 +1,6 @@
 <template>
-    <div class="container">
+    <div class="container-fluid">
+
         <div class="row">
             <div class="card">
                 <div class="card-body">
@@ -11,10 +12,11 @@
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">{{title}}</h5>
-                    <p class="card-text" v-html="article"></p>
+                    <div class="card-text col-md-12" v-html="article"></div>
                 </div>
             </div>
         </div>
+
     </div>
 </template>
 
@@ -48,3 +50,15 @@
         }
     }
 </script>
+
+
+<style>
+.image-style-align-right {
+    float: right;
+    clear: both;
+}
+.image-style-align-left {
+    float: left;
+    clear: both;
+}
+</style>
